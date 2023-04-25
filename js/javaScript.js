@@ -22,7 +22,7 @@ const menu = document.querySelector("#menu").cloneNode(1);
 // При клике на иконку hamb вызываем ф-ию hambHandler
 hamb.addEventListener("click", hambHandler);
 
-// Выполняем действия при клике ..
+// Выполняем действия при клике ../
 function hambHandler(e) {
   e.preventDefault();
   // Переключаем стили элементов при клике
@@ -50,5 +50,14 @@ function closeOnClick() {
   popup.classList.remove("open");
   hamb.classList.remove("active");
   body.classList.remove("noscroll");
+}
+
+addAnother = function() {
+  var ul = document.getElementById("submenu");
+  var li = document.createElement("li");
+  var children = ul.children.length + 1
+  li.setAttribute("submenu", "ul"+children)
+  li.appendChild(document.createTextNode("li "+children));
+  ul.appendChild(li)
 }
 

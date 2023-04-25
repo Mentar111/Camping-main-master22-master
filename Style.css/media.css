@@ -442,7 +442,8 @@ h6 {
 
   .popup.open {
     left: 0;
-  }
+    height: 520px;
+}
 
   .popup .menu {
     width: 100%;
@@ -611,11 +612,9 @@ h6 {
 
 
 .Explanation_img {
-  width: 600px;
-  margin-top: 50px;
-  margin-right: 0vw;
+  width: 559px;
+  margin: 24px;
 }
-
 .img_Explanation {
   width: 48vh;
   margin-left: 17vw;
