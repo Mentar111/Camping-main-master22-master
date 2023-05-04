@@ -56,7 +56,7 @@ img{
 .icon_log_in{
   width: 56px;
   position: absolute;
-  z-index: 1;
+  z-index: 1000;
   margin-left: 93%;
 }
 
@@ -188,31 +188,82 @@ h6{
   font-size: 1em;
 }
 
-
+/**/
 .Explanation {
   width: 70%;
   min-width: 1170px;
   margin: 0 auto;
   margin-top: 20px;
 }
+.wrapper {
+  position: absolute;
+  width: 100%;
+  height: 62%;
+  left: 26%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  perspective: 1000px;
+
+}
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  backface-visibility: hidden;
+  background-color: #fff;
+  box-shadow: inset 0 0 90px 0 rgb(14 2 0);
+ }
+.front, .Explanation_img {
+  max-width: 100%;
+  min-width: 100%;
+  height: auto;
+}
+.back {
+  transform: rotateY(180deg);
+}
+.card:hover .front {
+  transform: rotateY(180deg);}
+.card:hover .back {
+  transform: rotateY(360deg);}
+
+span{
+  color: rgb(0, 0, 0);
+  position: relative;
+}
 
 .img_Explanation{
   width: 400px;
 }
 
-.Explanation_img{
-  width: 600px;
-    float: right;
-    margin-top: 50px;
+.Explanation_img {
+  width: 105%;
+  height: 500px;
+  float: right;
+  border-radius: none;
+}
+
+.text_explanation{
+opacity: 0;
+color: white;
+z-index: 100;
 
 }
 
-
-
-
-.Explanation_text{
-
+.Explanation_text {
   font-size: 1.3em;
+  width: 800px;
 }
 
 .vector {
@@ -497,6 +548,7 @@ footer{
   top: 0;
   width: 100%;
   height: 75px;
+  z-index: 1000;
 }
 
 .navbar_wrap {
@@ -513,6 +565,15 @@ footer{
   display: none;
 }
 
+.i_menu, #i_menu {
+  display: flex;
+  width: 97px;
+  height: 44px;
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
  
 
 .cf:before, .cf:after {
@@ -522,9 +583,7 @@ footer{
   .cf:after {
     clear: both;
   }
-  .cf {
-    zoom: 1;
-  }
+  
   .menu #menu {
     list-style:none;
     width: 800px;
@@ -593,7 +652,14 @@ footer{
   }
 
   /* Odd stuff */
-
+  .i_menu  {
+    -webkit-transform: skewX(-12deg) translateX(0);
+    width: 123px;
+    height: 44px;
+    font-size: 17px;
+    color: #050505;
+    font-family: Arial, Helvetica;
+}
  .submenu > li:nth-child(odd) {
     -webkit-transform: skewX(-25deg) translateX(0);
   }
@@ -639,4 +705,18 @@ footer{
   list-style: none;
  }
 
+
+ /*id menu-js*/
+#block{
+  display: block;
+
+}
+#submenu{
+  position: absolute;
+  width: 200px;
+  left: 50%;
+  margin-left: -100px;
+  -webkit-transform: skewX(-25deg);
+  -webkit-transform-origin: left top;
+}
  /* The end Menu */
