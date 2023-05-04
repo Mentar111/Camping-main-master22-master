@@ -29,6 +29,7 @@ function hambHandler(e) {
   popup.classList.toggle("open");
   hamb.classList.toggle("active");
   body.classList.toggle("noscroll");
+ 
   renderPopup();
 }
 
@@ -42,7 +43,7 @@ const links = Array.from(menu.children);
 
 // Для каждого элемента меню при клике вызываем ф-ию
 links.forEach((link) => {
-  link.addEventListener("click", closeOnClick);
+  // link.addEventListener("click", closeOnClick);
 });
 
 // Закрытие попапа при клике на меню
@@ -50,14 +51,6 @@ function closeOnClick() {
   popup.classList.remove("open");
   hamb.classList.remove("active");
   body.classList.remove("noscroll");
-}
 
-addAnother = function() {
-  var ul = document.getElementById("submenu");
-  var li = document.createElement("li");
-  var children = ul.children.length + 1
-  li.setAttribute("submenu", "ul"+children)
-  li.appendChild(document.createTextNode("li "+children));
-  ul.appendChild(li)
 }
 

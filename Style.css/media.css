@@ -16,7 +16,7 @@
   width: 900px;
   height: 751px;
   min-width: 1200px;
-  background-size: 100%;
+  background-size: 86%;
   background-image: url(../images/fon.jpg);
   overflow: hidden;
   background-repeat: no-repeat;
@@ -50,8 +50,20 @@ h6 {
     padding: 10px 20px;
     cursor: pointer;
     position: fixed;
-    right: 60px;
+    right: 21%;
 }
+
+.i_menu {
+  font-size: 28px;
+  right: 43px;
+  position: inherit;
+  -webkit-transform: skewX(-13deg) translateX(0);
+  color: #3f3f3f;
+  top: 7px;
+  text-transform: uppercase;
+  font-family: bold;
+}
+
 
   .bar {
     display: block;
@@ -68,27 +80,25 @@ h6 {
     position: fixed;
     top: 75px;
     left: -100%;
-    width: 50%;
-    height: 50%;
-    background-color: #ffffff81;
+    width: 28%;
+    height: 45%;
+    background-color: #ffffffd6;
     z-index: 100;
     display: flex;
     transition: 0.3s;
     overflow: hidden;
-  }
-
+}
   .popup.open {
     left: 0;
   }
 
   .popup .menu {
     width: 100%;
-    height: 100%;
+    height: 91%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    padding: 10px 0;
     overflow: auto;
 }
 
@@ -100,9 +110,8 @@ h6 {
     width: 50%;
     height: 50%;
     margin: 0 auto;
-    justify-content: center;
     padding: 17px 0;
-    font-size: 25px;
+    font-size: 21px;
     font-weight: bold;
     color: #3f3f3f;
 }
@@ -173,13 +182,13 @@ h6 {
   background: none;
   width: 43px;
   position: fixed;
-  right: 124px;
+  right: 26%;
   top: 17px;
 }
 
 .long_in_text {
   width: 80px;
-  right: 14%;
+  right: 29%;
   top: 20px;
   position: fixed;
 }
@@ -194,7 +203,7 @@ h6 {
   transition: transform .4s ease-in-out;
 }
 
-.text_container {
+/* .text_container {
   position: absolute;
   text-transform: uppercase;
   font-family: 'Rubik One', sans-serif;
@@ -209,13 +218,13 @@ h6 {
   mix-blend-mode: multiply;
   padding: 0px 7px 0px 24px;
   transition: transform .4s ease-in-out;
-}
+} */
 
 .text_container {
   TOP: 27vh;
-  width: 45vw;
+  width: 40vw;
   left: 49vw;
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 
 /*обратная связь в меню!*/
@@ -254,26 +263,74 @@ h6 {
 
 
 .Explanation_img {
-  width: 76%;
-  height: 571px;
-  margin-right: 15vw;
+  width: 100%;
 }
 .img_Explanation {
-  width: 48vh;
-  margin-left: 39vw;
-  margin-top: 60px;
+  width: 46vh;
+  margin-left: 3vw;
+}
+
+
+.wrapper {
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  left: 18%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  perspective: 1000px;
+
+}
+.front, .back {
+  position: absolute;
+  width: 94%;
+  height: 79%;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  backface-visibility: hidden;
+  background-color: #fff;
+  box-shadow: inset 0 0 90px 0 rgb(14 2 0);
+}
+.front, .Explanation_img {
+  max-width: 100%;
+  min-width: 100%;
+  height: auto;
+}
+.back {
+  transform: rotateY(180deg);
+}
+.card:hover .front {
+  transform: rotateY(180deg);}
+.card:hover .back {
+  transform: rotateY(360deg);}
+
+span{
+  color: rgb(0, 0, 0);
+  position: relative;
 }
 
 .text_explan {
-  position: absolute;
-  margin-left: 37vw;
-  margin-top: 50px;
+  position: relative;
+  margin-left: 5vw;
+  font-size: 1.3em;
 }
 
 .Explanation_text {
-  font-size: 1.3em;
-  margin-left: 12vw;
-  width: 81%;
+  margin-left: 4vw;
+  width: 47%;
+  float: right;
+  position: absolute;
+  font-size: 1em;
 }
 
 .Explanation {
@@ -285,28 +342,29 @@ h6 {
 .public {
   width: 100%;
   margin-top: 51px;
-  margin-left: 16vw;
+  margin-left: 7vw;
 }
 .text_butten_text {
   color: white;
   text-align: center;
   font-size: .8em;
   line-height: 40px;
+  text-align: center;
 }
 
 
 .links_map {
   width: 36%;
-  left: 6vw;
+  left: 1vw;
 }
 
 .text_info_camping {
-  width: 100%;
-  left: 6vw;
+  width: 88%;
+  left: 3vw;
   position: absolute;
-  margin-top: 14vw;
+  margin-top: 10vw;
+  font-size: 0.9em;
 }
-
 .text_Attractions {
   display: flex;
   color: rgb(0, 0, 0);
@@ -330,11 +388,7 @@ h6 {
 }
 
 .Attractions {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  margin-top: 80px;
-  margin-left: 150px;
+  margin-left: 75px;
 }
 
 .footer-distributed {
@@ -345,6 +399,7 @@ h6 {
   text-align: left;
   font: bold 16px sans-serif;
   padding: 55px 50px;
+  min-width: 1024px;
 }
 
 
@@ -360,15 +415,16 @@ h6 {
   background: none;
 }
 
-
-
 }
 
 
 
-
 @media all and (max-width: 800px){
-
+ 
+body{
+  min-width: 1000px;
+ 
+}
   .navbar__wrap .menu {
     display: none;
   }
@@ -377,8 +433,8 @@ h6 {
 /*Главный фон!*/
 .container {
   width: 900px;
-  height: 751px;
-  min-width: 1200px;
+  height: 650px;
+  min-width: 1000px;
   background-size: 100%;
   background-image: url(../images/fon.jpg);
   overflow: hidden;
@@ -413,7 +469,14 @@ h6 {
     padding: 10px 20px;
     cursor: pointer;
     position: fixed;
-    right: 60px;
+    right: 20%;
+}
+
+.i_menu {
+  font-size: 29px;
+  right: 41px;
+  position: inherit;
+  font-family: bold;
 }
 
   .bar {
@@ -431,14 +494,14 @@ h6 {
     position: fixed;
     top: 75px;
     left: -100%;
-    width: 50%;
+    width: 28%;
     height: 50%;
-    background-color: #ffffff81;
+    background-color: #ffffffe6;
     z-index: 100;
     display: flex;
     transition: 0.3s;
     overflow: hidden;
-  }
+}
 
   .popup.open {
     left: 0;
@@ -460,7 +523,7 @@ h6 {
     margin: 0 auto;
     justify-content: center;
     padding: 17px 0;
-    font-size: 25px;
+    font-size: 21px;
     font-weight: bold;
     color: #3f3f3f;
 }
@@ -531,13 +594,13 @@ h6 {
   background: none;
   width: 43px;
   position: fixed;
-  right: 124px;
+  right: 26%;
   top: 17px;
 }
 
 .long_in_text {
   width: 80px;
-  right: 14%;
+  right: 29%;
   top: 20px;
   position: fixed;
 }
@@ -571,9 +634,9 @@ h6 {
 
 .text_container {
   TOP: 27vh;
-  width: 45vw;
+  width: 57vw;
   left: 49vw;
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 
 /*обратная связь в меню!*/
@@ -612,24 +675,62 @@ h6 {
 
 
 .Explanation_img {
-  width: 559px;
-  margin: 24px;
+  width: 551px;
 }
 .img_Explanation {
   width: 48vh;
-  margin-left: 17vw;
+  margin-left: 6vw;
   margin-top: 60px;
 }
 
+
+.wrapper {
+  position: absolute;
+  width: 100%;
+  height: 73%;
+  left: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 395px;
+  height: 483px;
+  position: relative;
+  perspective: 1000px;
+}
+.front, .back {
+  box-shadow: inset 0 0 90px 0 rgb(14 2 0);
+}
+.front, .Explanation_img {
+  max-width: 100%;
+  min-width: 100%;
+  height: auto;
+}
+.back {
+  transform: rotateY(180deg);
+}
+.card:hover .front {
+  transform: rotateY(180deg);}
+.card:hover .back {
+  transform: rotateY(360deg);}
+
+span{
+  color: rgb(0, 0, 0);
+  position: relative;
+}
+
+
 .text_explan {
   position: absolute;
-  margin-left: 110px;
+  margin-left: 70px;
   margin-top: 50px;
 }
 
 .Explanation_text {
-  font-size: 1.2em;
-  margin-left: 11vw;
+  font-size: 1.1em;
+  margin-left: 7vw;
+  width: 661px;
 }
 
 .Explanation {
@@ -642,7 +743,7 @@ h6 {
   display: flex;
   width: 118%;
   margin-top: 51px;
-  margin-left: 29vw;
+  margin-left: 8vw;
 }
 
 .text_info {
@@ -663,16 +764,16 @@ h6 {
 
 .text_info_camping {
   width: 100%;
-  left: 30vw;
+  left: 10vw;
   position: absolute;
-  margin-top: 17vw;
+  margin-top: 18vw;
 }
 
 
 .links_map {
   width: 42%;
   margin: 0 auto;
-  margin-left: 53vw;
+  margin-left: 40vw;
 }
 
 .text_Attractions {
@@ -694,24 +795,23 @@ h6 {
 
 .Travel_references {
   width: 79%;
-  left: 32vw;
+  left: 11vw;
   position: relative;
 }
 
 .Attractions {
   width: 880px;
   margin-top: 80px;
-  left: 11vw;
+  left: 0vw;
   position: relative;
 }
 
 .footer-distributed {
   font: bold 14px sans-serif;
   display: flex;
-  width: 100%;
-  min-width: 1200px;
+  width: 90%;
+  min-width: 952px;
 }
-
 
 .map_map {
    display: none
