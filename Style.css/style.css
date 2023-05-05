@@ -120,7 +120,7 @@ background:none;
   width: 46vw;
   height: 39px;
   left: 28vw;
-  font-size: 1.7em;
+  font-size: 1.6em;
   background: rgb(118 102 8);
   color: white;
   border-radius: 5px;
@@ -203,6 +203,12 @@ h6{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.container_two{
+  display: flexbox;
+  width: 400px;
+  height: 450px;
 }
 .card {
   width: 500px;
@@ -544,7 +550,7 @@ footer{
 
 .navbar {
   position: fixed;
-  left: 14vw;
+  left: 13vw;
   top: 0;
   width: 100%;
   height: 75px;
@@ -573,6 +579,7 @@ footer{
   margin: 0 auto;
   justify-content: center;
   align-items: center;
+  text-transform: uppercase;
 }
  
 
@@ -652,11 +659,11 @@ footer{
   }
 
   /* Odd stuff */
-  .i_menu  {
-    -webkit-transform: skewX(-12deg) translateX(0);
+  .i_menu {
+    -webkit-transform: skewX(-25deg) translateX(0);
     width: 123px;
     height: 44px;
-    font-size: 17px;
+    font-size: 14px;
     color: #050505;
     font-family: Arial, Helvetica;
 }
