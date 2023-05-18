@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+      background: 
+        -webkit-linear-gradient(rgba(5, 610, 255, 0.4), rgba(135, 60, 255, 0.0) 80%),
+        -webkit-linear-gradient(-45deg, rgba(120, 155, 255, 0.9) 25%, rgba(255, 160, 65, 0.9) 76%);
+}
+
+
+/*Навигация*/
+header {
+    width: 28%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    top: 20px;
+    position: relative;
+    
+}
+.nav > ul{
+    width: 100%;
+    /* background-color: #000; */
+    display: flex;
+    list-style: none;  
+    position: relative;
+    
+
+ 
+}
+
+.nav> ul> li{
+
+ margin: 0 20px;
+ font-size: 20px;
+ justify-content: center;
+
+
+
+}
+.nav > ul >li >a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav > ul > li > a:hover{
+    color: #cfcece;
+}
+/*The End навигация*/
+
+/*Логотип*/
+.img_logo {
+    width: 100px;
+    position: absolute;
+    top: 1px;
+    left: 20px;
+
+}
+
+
+.icon_text {
+    width: 140px;
+    position: absolute;
+    top: 20px;
+    left: 120px;
+    color: #00dcff;
+}
+/*The End Логотип*/
+
+
+.block_logo {
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+}
+
+.container {
+    position: absolute;
+    top: 100%;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.text_container {
+    
+    top: 150px;
+    position: relative;
+}
+
+.text{
+    width: 70%;
+    height: 100%;
+}
+
+main {
+    background-image: url(../images/fon_gors.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 1070px;
+    position: relative;
+}
+
+.main_container {
+    position: absolute;
+    bottom: 0;
+}
+.text_main {
+    position: relative;
+}
+
+/*Товары*/
+
+.Shopping_cart {
+    margin: 10px auto;
+    background: #ffffff;
+    box-shadow: 1px 2px 3px 0px rgb(0 0 0 / 10%);
+    border-radius: 6px;
+    width: 70%;
+}
+
+.Shopping_bar{
+    height: 60px;
+    border-bottom: 1px solid #E1E8EE;
+    padding: 20px 30px;
+    color: #5E6977;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.item {
+    padding: 15px 20px;
+    height: 100%;
+    display: flex;
+}
+
+.item:nth-child(3 ) {
+    border-top: 1px solid #E1E8EE;
+    border-bottom: 1px solid #E1E8EE;
+}
+
+.item:nth-child(4 ) {
+    border-top: 1px solid #E1E8EE;
+    border-bottom: 1px solid #E1E8EE;
+}
+
+.item:nth-child(5) {
+    border-top: 1px solid #E1E8EE;
+    border-bottom: 1px solid #E1E8EE;
+}
+
+
+.buttons{
+    position: relative;
+    padding-top: 30px;
+    margin-left: 60px;
+}
+
+.delete_btn,
+.like_btn {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.delete_btn {
+    width: 40px;
+    height: 40px;
+    background: url("../delete_like/delete.svg") no-repeat center;
+    margin-left: -70px;
+}
+
+
+
+.like_btn {
+    position: absolute;
+    top: 9px;
+    left: 15px;
+    background: url('../delete_like/twitter-heart.png');
+    width: 77px;
+    height: 70px;
+    background-size: 2900%;
+    background-repeat: no-repeat;
+    margin-left: -68px;
+}
+.is_active {
+    animation-name: animate;
+    animation-duration: .8s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(28);
+    animation-fill-mode: forwards;
+}
+
+@keyframes animate {
+    0%  {background-position: left;}
+    50%  {background-position: right;}
+    100%  {background-position: right;}
+}
+
+.images{
+    margin-right: 50px;
+}
+
+.description {
+    padding-top: 10px;
+    margin-right: 60px;
+    width: 115px;
+}
+
+.description span {
+    display: block;
+    font-size: 14px;
+    color: #43484D;
+    font-weight: 400;
+    width: 200px;
+}
+
+.description span:first-child{
+    margin-bottom: 5px;
+}
+
+.description span:last-child {
+    font-weight: 300;
+    margin-top: 8px;
+    color: #86939E;
+}
+
+
+.quantity {
+    padding-top: 20px;
+    margin-right: 60px;
+  }
+  .quantity input {
+    -webkit-appearance: none;
+    border: none;
+    text-align: center;
+    width: 100px;
+    font-size: 16px;
+    color: #43484D;
+    font-weight: 300;
+    bottom: 11px;
+    position: relative;
+}
+   
+  button[class*=btn] {
+    width: 30px;
+    height: 30px;
+    background-color: #E1E8EE;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+  }
+  .minus_btn img {
+    margin-bottom: 3px;
+  }
+  .plus_btn img {
+    margin-top: 2px;
+  }
+   
+  button:focus,
+  input:focus {
+    outline:0;
+  }
+
+  .total_price {
+    width: 83px;
+    padding-top: 27px;
+    text-align: center;
+    font-size: 16px;
+    color: #43484D;
+    font-weight: 300;
+  }
+
+.total_price{
+ float: right;
+}
+
+
+.plus,.minus{
+    width: 30px;
+}
+
+img{
+    width: 300px;
+}
+
+
+@media (max-width: 800px) {
+    .shopping-cart {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+    }
+    .item {
+      height: auto;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .image img {
+      width: 50%;
+    }
+    .image,
+    .quantity,
+    .description {
+      width: 100%;
+      text-align: center;
+      margin: 6px 0;
+    }
+    .buttons {
+      margin-right: 20px;
+    }
+  }

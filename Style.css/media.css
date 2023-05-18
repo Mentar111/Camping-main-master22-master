@@ -76,9 +76,9 @@ h6 {
 
 .i_menu {
   font-size: 28px;
-  right: 43px;
+  right: 61px;
   position: inherit;
-  -webkit-transform: skewX(-13deg) translateX(0);
+  -webkit-transform: skewX(-24deg) translateX(0);
   color: #3f3f3f;
   top: 7px;
   text-transform: uppercase;
@@ -237,8 +237,9 @@ h6 {
 .footer-center_two {
   display: block;
   font-size: 1em;
-  margin-top: 4vw;
+  margin-top: 27vw;
   float: left;
+  position: absolute;
 }
 /*The end обратная связь в меню!*/
 
@@ -643,7 +644,7 @@ h6 {
 .footer-center_two {
   display: block;
   font-size: 1em;
-  margin-top: 4vw;
+  margin-top: 33vw;
   float: left;
 }
 /*The end обратная связь в меню!*/
@@ -861,13 +862,13 @@ img {
 
 
 .logo {
-  transition: transform .4s ease-in-out;
-  margin-left: 60px;
+    transition: transform .4s ease-in-out;
+    margin-left: 5px;
 }
 
 
 h6 {
-  left: 20vw;
+  left: 14vw;
 }
 /*The-end Главный фон!*/
 
@@ -881,7 +882,7 @@ h6 {
   padding: 10px 20px;
   cursor: pointer;
   position: fixed;
-  right: 24%;
+  right: 20%;
 }
 
 .i_menu {
@@ -912,12 +913,11 @@ font-family: bold;
   top: 75px;
   left: -100%;
   width: 28%;
-  height: 45%;
+  height: 38%;
   background-color: #ffffffd6;
   z-index: 100;
   display: flex;
   transition: 0.3s;
-
 }
 .popup.open {
   left: 0;
@@ -1062,7 +1062,7 @@ color: rgb(243, 8, 8);
 .footer-center_two {
   display: block;
   font-size: 1em;
-  margin-top: 4vw;
+  margin-top: 40vw;
   float: left;
 }
 /*The end обратная связь в меню!*/
@@ -1507,7 +1507,7 @@ span{
   .footer-center_two {
     display: block;
     font-size: 1.1em;
-    margin-top: 4vw;
+    margin-top: 66vw;
     float: left;
 }
   /*The end обратная связь в меню!*/
@@ -1953,7 +1953,7 @@ h6 {
   .footer-center_two {
     display: block;
     font-size: 1.1em;
-    margin-top: 4vw;
+    margin-top: 96vw;
     float: left;
 }
   /*The end обратная связь в меню!*/
@@ -2137,7 +2137,7 @@ h6 {
   font: bold 14px sans-serif;
   display: block;
   width: 90%;
-  min-width: 969px;
+  min-width: 1018px;
 }
   .map_map {
      display: none
