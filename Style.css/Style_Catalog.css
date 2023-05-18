@@ -52,7 +52,7 @@ header {
 }
 
 .nav > ul > li > a:hover{
-    color: #cfcece;
+    color: #9c5306;
 }
 /*The End навигация*/
 
@@ -285,6 +285,15 @@ main {
 .plus,.minus{
     width: 30px;
 }
+
+:hover.plus{
+    background-color: #9c5306;
+}
+:hover.minus{
+    background-color: #9c5306;
+
+}
+
 
 img{
     width: 300px;
