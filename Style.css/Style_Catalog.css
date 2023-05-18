@@ -170,12 +170,11 @@ main {
 }
 
 .delete_btn {
-    width: 40px;
-    height: 40px;
-    background: url("../delete_like/delete.svg") no-repeat center;
+    width: 30px;
+    height: 38px;
+    background: url(../delete_like/delete.svg) no-repeat center;
     margin-left: -70px;
 }
-
 
 
 .like_btn {
@@ -215,10 +214,11 @@ main {
 
 .description span {
     display: block;
-    font-size: 14px;
+    font-size: 13px;
     color: #43484D;
     font-weight: 400;
     width: 200px;
+    margin-left: 14px;
 }
 
 .description span:first-child{
