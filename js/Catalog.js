@@ -1,6 +1,6 @@
 
 
-$('.minus_btn').on('click', function(e) {
+$('.plus_btn').on('click', function(e) {
     e.preventDefault();
     var $this = $(this);
     var $input = $this.closest('div').find('input');
@@ -16,7 +16,7 @@ $input.val(value);
 
 });
 
-$('.plus_btn').on('click', function(e) {
+$('.minus_btn').on('click', function(e) {
     e.preventDefault();
     var $this = $(this);
     var $input = $this.closest('div').find('input');
@@ -25,7 +25,7 @@ $('.plus_btn').on('click', function(e) {
     if (value < 100) {
       value = value + 1;
     } else {
-        value =100;
+        value =1;
     }
 
     $input.val(value);
@@ -36,4 +36,13 @@ $(this).toggleClass('is_active');
 });
 
 
-   
+$(function(){
+	$('.repeat').click(function(){
+    	var classes =  $(this).parent().attr('class');
+        $(this).parent().attr('class', 'animate');
+        var indicator = $(this);
+        setTimeout(function(){ 
+        	$(indicator).parent().addClass(classes);
+        }, 20);
+    });
+});

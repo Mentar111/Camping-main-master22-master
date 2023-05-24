@@ -112,9 +112,11 @@ section {
 	line-height:2;
 }
 
-.footer-distributed .footer-center p a{
-	color:  lightseagreen;
-	text-decoration: none;;
+.footer-distributed .footer-center p a {
+    color: lightseagreen;
+    text-decoration: none;
+    right: 12px;
+    position: relative;
 }
 
 .footer-distributed .footer-links a:before {
@@ -195,4 +197,12 @@ section {
 		margin-left: 0;
 	}
 
+}
+
+ /*Footer*/
+
+ .fa-phone {
+    color: lightseagreen;
+    position: relative;
+    right: 13px;
 }
