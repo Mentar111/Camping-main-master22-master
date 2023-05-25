@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+ 
 }
 
 
@@ -16,6 +17,7 @@ body {
       background: 
         -webkit-linear-gradient(rgba(5, 610, 255, 0.4), rgba(135, 60, 255, 0.0) 80%),
         -webkit-linear-gradient(-45deg, rgba(120, 155, 255, 0.9) 25%, rgba(255, 160, 65, 0.9) 76%);
+        overflow-x: hidden;
 }
 
 
@@ -45,10 +47,8 @@ header {
  margin: 0 20px;
  font-size: 20px;
  justify-content: center;
-
-
-
 }
+
 .nav > ul >li >a{
     text-decoration: none;
     color: #ffffff;
@@ -93,7 +93,6 @@ header {
 }
 
 .text_container {
-    
     top: 150px;
     position: relative;
 }
@@ -177,6 +176,7 @@ main {
     height: 38px;
     background: url(../delete_like/delete.svg) no-repeat center;
     margin-left: -70px;
+    display: none;
 }
 
 
