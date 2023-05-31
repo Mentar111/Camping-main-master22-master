@@ -198,6 +198,11 @@ main {
     
 }
 
+:hover.like_btn:active{
+    opacity: 1;
+     
+ }
+ 
 .is_active {
     animation-name: animate;
     animation-duration: .8s;
@@ -339,4 +344,3 @@ img{
   }
 
  
-

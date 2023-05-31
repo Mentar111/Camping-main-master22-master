@@ -120,21 +120,20 @@ background:none;
 }
 
 .text_h3 {
-  position: absolute;
-  text-transform: uppercase;
-  font-family: 'Rubik One', sans-serif;
-  TOP: 30vh;
-  width: 46vw;
-  height: 39px;
-  left: 28vw;
-  font-size: 1.6em;
-  background: rgb(118 102 8);
-  color: rgb(184, 184, 184);
-  border-radius: 5px;
-  /* mix-blend-mode: multiply; */
-  padding: 19px 8px 14px 22px;
-  transition: transform .4s ease-in-out;
-  z-index: 100;
+    position: absolute;
+    text-transform: uppercase;
+    font-family: 'Rubik One', sans-serif;
+    TOP: 30vh;
+    width: 41vw;
+    height: 39px;
+    left: 28vw;
+    font-size: 1.6em;
+    background: rgb(118 102 8);
+    color: rgb(184, 184, 184);
+    border-radius: 5px;
+    padding: 19px 8px 14px 22px;
+    transition: transform .4s ease-in-out;
+    z-index: 100;
 }
 .text_h3:hover{
     transform: translateX(-10px);

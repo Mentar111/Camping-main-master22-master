@@ -109,9 +109,10 @@ h6 {
     transition: 0.3s;
    
 }
-  .popup.open {
-    left: 0;
-  }
+.popup.open {
+  left: 0;
+  z-index: 1000;
+}
 
   .popup .menu {
     width: 100%;
